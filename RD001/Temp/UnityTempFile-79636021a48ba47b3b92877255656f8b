@@ -70,5 +70,6 @@
 'Assets/CrossPlatformInput/Scripts/VirtualInput.cs'
 'Assets/Scripts/Camera2DFollow.cs'
 'Assets/Scripts/PlatformController.cs'
+'Assets/Scripts/PlatformHController.cs'
 -r:'/Applications/Unity/Unity.app/Contents/Frameworks/Mono/lib/mono/unity/System.Runtime.Serialization.dll'
 -r:'/Applications/Unity/Unity.app/Contents/Frameworks/Mono/lib/mono/unity/System.Xml.Linq.dll'
