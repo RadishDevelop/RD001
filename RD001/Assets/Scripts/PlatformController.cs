@@ -7,16 +7,21 @@ public class PlatformController : MonoBehaviour {
 	public Vector2 direction;
 	public float x_position;
 	public float y_position;
+	public Vector2 pointA;
 	public Vector2 pointB;
-
+	public float offset;
+	public float platformSpeed;
+	public int delay;
 	// Use this for initialization
 	IEnumerator Start () {
-	 platform = GameObject.Find("Moving01");
-	 var pointA = platform.transform.position;
+	 //platform = GameObject.Find("Moving01");
+	 pointA = new Vector2(platform.transform.position.x,platform.transform.position.y + offset + offset);
+	 pointB = new Vector2(platform.transform.position.x,platform.transform.position.y - offset - offset);
 	 while(true)
 	 {
-		 yield return StartCoroutine(MovePlatform(platform.transform,pointA,pointB,3.0f));
-		 yield return StartCoroutine(MovePlatform(platform.transform,pointB,pointA,3.0f));
+		 yield return new WaitForSeconds(delay);
+		 yield return StartCoroutine(MovePlatform(platform.transform,pointA,pointB,platformSpeed));
+		 yield return StartCoroutine(MovePlatform(platform.transform,pointB,pointA,platformSpeed));
 	 }
 	 
 	}
