@@ -14,7 +14,6 @@ public class PlatformController : MonoBehaviour {
 	public int delay;
 	// Use this for initialization
 	IEnumerator Start () {
-	 //platform = GameObject.Find("Moving01");
 	 pointA = new Vector2(platform.transform.position.x,platform.transform.position.y + offset + offset);
 	 pointB = new Vector2(platform.transform.position.x,platform.transform.position.y - offset - offset);
 	 while(true)

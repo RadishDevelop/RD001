@@ -62,6 +62,7 @@
      <Compile Include="Assets\CrossPlatformInput\Scripts\TouchPad.cs" />
      <Compile Include="Assets\CrossPlatformInput\Scripts\VirtualInput.cs" />
      <Compile Include="Assets\Scripts\Camera2DFollow.cs" />
+     <Compile Include="Assets\Scripts\GeneratorScript.cs" />
      <Compile Include="Assets\Scripts\PlatformController.cs" />
      <Compile Include="Assets\Scripts\PlatformHController.cs" />
      <None Include="Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
